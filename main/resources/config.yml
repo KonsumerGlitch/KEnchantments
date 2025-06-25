@@ -1,0 +1,21 @@
+# KEnchantments Configuration
+
+# Maximum number of custom enchantments per item
+max-enchants-per-item: 9
+
+# GUI Settings
+gui:
+  title: "§6Custom Enchant Books"
+
+# Random Generator Settings
+generator:
+  min-success-rate: 1
+  max-success-rate: 100
+  min-destroy-rate: 1
+  max-destroy-rate: 99
+
+# Messages
+messages:
+  no-permission: "§cYou don't have permission to use this command!"
+  only-players: "§cOnly players can use this command!"
+  config-reloaded: "§aKEnchantments configuration reloaded!"

@@ -1,0 +1,39 @@
+name: KEnchantments
+version: 1.0.0
+main: com.kenzo.kenchantments.KEnchantmentsPlugin
+api-version: 1.18
+author: Kenzo
+description: PvP Custom Enchantments Plugin
+
+commands:
+  cebooks:
+    description: Open custom enchant books GUI
+    usage: /cebooks
+    permission: kenchantments.books
+
+  kegen:
+    description: Get a random enchantment generator
+    usage: /kegen
+    permission: kenchantments.generator
+  kereload:
+    description: Reload plugin configuration
+    usage: /kereload
+    permission: kenchantments.reload
+
+permissions:
+  kenchantments.*:
+    description: Access to all KEnchantments features
+    default: op
+    children:
+      kenchantments.books: true
+      kenchantments.generator: true
+      kenchantments.reload: true
+  kenchantments.books:
+    description: Access to enchant books GUI
+    default: true
+  kenchantments.generator:
+    description: Access to random enchant generator
+    default: op
+  kenchantments.reload:
+    description: Access to reload command
+    default: op
